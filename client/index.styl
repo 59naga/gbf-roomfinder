@@ -1,0 +1,92 @@
+@import 'sanitize.styl'
+
+sanitize()
+
+body
+  position relative
+
+  &::after
+    position fixed
+    top 0
+    left 0
+    bottom 0
+    right 0
+    content ""
+    background url('./background.png') no-repeat center center
+    opacity 0.1
+    z-index -1
+
+.copied
+  opacity .25
+
+.controls
+  display flex
+  padding .5em
+
+  .react-tagsinput
+    flex 5
+  label.react-toggle
+    flex 1
+    font-size small
+    min-width 10em
+    padding .6em .5em
+
+    span
+      display inline-block
+
+    div.react-toggle
+      vertical-align middle
+      margin-right .25em
+
+.rooms
+  width 23em
+  margin .3em
+
+  li
+    padding .3em 0
+
+    display flex
+    font-size small
+
+    figure
+      width 3em
+
+      white-space nowrap
+      overflow hidden
+      text-overflow ellipsis
+      img
+        width 100%
+
+    figcaption
+      width 100%
+      padding 0 .5em
+
+      cursor pointer
+      &:hover
+        opacity .5
+
+      footer
+        width 100%
+        display flex
+
+        h3
+          font-weight normal
+
+        > p
+          display block
+          text-align right
+          flex 3
+
+      position relative
+      .room-id
+        position absolute
+        right 0
+        top 0
+        bottom 0
+        height 100%
+
+        margin-right .25em
+
+        font-size 3em
+        opacity .1
+        font-family monospace
