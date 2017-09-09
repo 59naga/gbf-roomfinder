@@ -11,6 +11,8 @@ rules:
   no-bitwise:
     - 1
     - int32Hint: true
+  newline-per-chained-call:
+    - 1
 
   jsx-a11y/href-no-hash: off
   jsx-a11y/label-has-for: 1

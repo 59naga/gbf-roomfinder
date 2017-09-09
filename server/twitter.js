@@ -2,6 +2,8 @@ import Twitter from 'twitter';
 import { formatTweet } from './utils';
 
 const keywords = [
+  '[グラブル]共闘クエスト参加者募集！',
+  'Join my Granblue Fantasy co-op room!',
   '［グラブル］マルチバトル参加者募集！',
   'Join my Granblue Fantasy raid room!',
 ];

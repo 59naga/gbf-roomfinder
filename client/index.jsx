@@ -2,11 +2,14 @@ import React from 'react';
 import { render } from 'react-dom';
 import { connect as createSocket } from 'socket.io-client';
 import { Provider } from 'react-redux';
+import moment from 'moment';
 
 import './index.styl';
 
 import store from './store';
 import List from './list';
+
+moment.locale('ja');
 
 const socket = createSocket(process.env.NODE_ENV === 'production' ? '/' : 'localhost:59798');
 socket.on('connect', () => {

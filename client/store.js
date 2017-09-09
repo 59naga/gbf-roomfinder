@@ -1,7 +1,7 @@
 import { createStore, compose } from 'redux';
 import update from 'react-addons-update';
 import persistState from 'redux-localstorage';
-import { extractRoomData } from './utils';
+import extractRoomData from 'gbf-roomfinder-parse';
 
 const initialState = {
   pristine: true,
