@@ -8,5 +8,7 @@ const listener = createListener();
 const server = createServer(listener);
 const io = createSocketIoServer(server);
 
+io.sockets.setMaxListeners(0);
+
 server.listen(process.env.PORT || 59798);
 createRoomFinder(io, process.env);
