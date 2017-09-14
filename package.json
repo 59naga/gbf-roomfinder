@@ -11,6 +11,10 @@
     "dev": "abby dev:server dev:client --launch bail",
     "dev:server": "abby start",
     "dev:client": "abby webpack-dev-server -- --open --hot",
+    "deploy": "abby build, deploy:*",
+    "deploy:clone": "git clone https://git.heroku.com/granblue-roomfinder.git heroku",
+    "deploy:copy": "cpr server heroku/server -o && cpr public heroku/public -o",
+    "deploy:push": "cd heroku && git add -A && git commit -m 'bump' && git push",
     "build": "abby webpack --env production"
   },
   "abigail": {
@@ -40,6 +44,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-1": "^6.24.1",
     "babel-register": "^6.26.0",
+    "cpr": "^2.2.0",
     "css-loader": "^0.28.7",
     "eslint": "^4.5.0",
     "eslint-config-airbnb": "^15.1.0",
