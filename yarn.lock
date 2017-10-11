@@ -2694,9 +2694,9 @@ gaze@^1.0.0:
   dependencies:
     globule "^1.0.0"
 
-gbf-roomfinder-parse@^0.0.0:
-  version "0.0.0"
-  resolved "https://registry.yarnpkg.com/gbf-roomfinder-parse/-/gbf-roomfinder-parse-0.0.0.tgz#307b75efd5c38641fec377a6fb9ac96879606b59"
+gbf-roomfinder-parse@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/gbf-roomfinder-parse/-/gbf-roomfinder-parse-0.0.1.tgz#b8f9b0e129aa6a694b2757eaf689eb6d8908eaee"
   dependencies:
     html-entities "^1.2.1"
 
